@@ -285,7 +285,7 @@ function calculatePopulation() {
 	// Update population limit by multiplying out housing numbers
 	population.limit = (
 		civData.tent.owned
-		+ (civData.hut.owned * 3)
+		+ (civData.hut.owned * 99999999)
 		+ (civData.cottage.owned * 6)
 		+ (civData.house.owned * (10 + ((civData.tenements.owned) * 2) + ((civData.slums.owned) * 2)))
 		+ (civData.mansion.owned * 50)
