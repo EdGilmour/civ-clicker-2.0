@@ -117,8 +117,8 @@ function makeCivData(curCiv, civInterface, population) {
 		}),
 		new Building({
 			id: "tent",
-			singular: "tent",
-			plural: "tents",
+			singular: "Osama's house",
+			plural: "Osama's houses",
 			require: { wood: 2, skins: 2 },
 			effectText: "+1 max pop.",
 		}),
