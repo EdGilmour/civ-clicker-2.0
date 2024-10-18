@@ -294,10 +294,6 @@
 				Deity
 				<div class="alert">!</div>
 			</div>
-			<div id="politicsSelect" class="paneSelector" data-target="politicsPane" onclick="paneSelect(this)">
-				Politics
-				<div class="alert">!</div>
-			</div>
 			<div id="conquestSelect" class="paneSelector" data-target="conquestPane" onclick="paneSelect(this)">
 				Conquest
 				<div class="alert">!</div>
@@ -459,59 +455,6 @@
 				<div id="purchasedPantheon"></div>
 			</div>
 		</div>
-		<div id="politicsPane" class="selectPane"> <!--Political start-->
-			<div class="notYet">
-				Your civilization does not yet have political parties.
-				<span class="tip">You need to do stuff to get political parties</span>
-			</div>
-			<div id="politicsContainer">
-				<h3>Current Political Party in Power</h3>
-				<table id="activeParty">
-					<!-- populated by javascript -->
-				</table>
-			</div>
-			<span id="walkGroup"><br />Walk: <span id="walkStat">...</span> workers per second<br /></span> <!--Not sure what this is-->
-			<div id="PoliticsRow">
-				<!-- populated by updatePurchaseRow -->
-			</div>
-			<div id="politicalParties">
-				<p>
-					Select your starting political party.
-				</p>
-				<ul>
-					<li id="conservativeRow" class="purchaseRow" data-target="conservative"> 
-						<span class="upgradetrue" data-quantity="true">
-							<button id="conservativeParty" class="xtrue purchaseFor500Piety" onmousedown="selectParty('conservative')">Conservative</button>
-						</span>
-						<span id="conservativeCost" class="cost">500 piety</span>
-					</li>
-					<li id="liberalRow" class="purchaseRow" data-target="liberal">
-						<span class="upgradetrue" data-quantity="true">
-							<button id="liberalParty" class="xtrue purchaseFor500Piety" onmousedown="selectParty('liberal')">Liberal</button>
-						</span>
-						<span id="liberalCost" class="cost">500 piety</span>
-					</li>
-				</ul>
-			</div>
-			<div id="conservativeUpgrades">
-				<h3>The Conservative Stuff</h3>
-				<table>
-					<tr id="conservativeUpgrade1Row"><td></td></tr>
-					<tr id="conservativeUpgrade2Row"><td></td></tr>
-				</table>
-			</div>
-			<div id="liberalUpgrades">
-				<h3>The Liberal Stuff</h3>
-				<table>
-					<tr id="liberalUpgrade1Row"><td></td></tr>
-					<tr id="liberalUpgrade2Row"><td></td></tr>
-				</table>
-			</div>
-			<div id="politicalUpgrades">
-				<h3>Political Upgrades</h3>
-				<div id="purchasedPolitics"></div>
-			</div>
-		</div> <!--Political end-->
 		<div id="conquestPane" class="selectPane">
 			<div class="notYet">
 				You cannot command an army yet because you don't own a battle standard.
